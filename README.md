@@ -17,3 +17,14 @@ The run_aero_challenge scripts are what the sever will run to execute your main 
 2.  Initialize your robot to the start position
 3.  Drive to the goal position while avoiding obstacles
 4.  Once you're happy, submit your code to the website! 
+
+Feel free to make a couple different "main.m" files in order to complete each challenge.
+
+# Additional Comments 
+
+Here are some additional comments on the above 4 commands.
+
+1.  The server will load the required environment file based on the challenge that you selected on the website 
+2.  You should initialize your robot to the start position.  Don't worry about hitting obstacles when initializing your robot to the start position - the server will make sure that your robot is at the 'start' position before running your script.  Some code that accomplishes this task is in all of the run_aero_challenge files 
+3.  Fairly straighforward
+4.  Make sure you select your challenge on the website under options for each experiment.
