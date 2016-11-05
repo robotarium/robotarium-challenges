@@ -15,7 +15,6 @@ run environment_two.m;
 % Initialize robot to starting position
 
 rb__ = RobotariumBuilder();
-rb__.actually_save_data = false;
 r__ = rb__.set_number_of_agents(1).set_save_data(true).build();
 
 % Initialize robot to starting position
@@ -25,6 +24,7 @@ init_checker = create_is_initialized(args{:});
 automatic_parker = create_automatic_parking_controller(args{:});
 
 x = r__.get_poses();
+r__.step();
 while(~init_checker(x, start))
 
     x = r__.get_poses();
