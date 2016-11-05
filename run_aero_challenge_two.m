@@ -4,6 +4,7 @@ close all
 % constants 
 
 distance_threshold_for_collision = 0.07;
+distance_threshold_for_goal = 0.5;
 
 addpath('environments')
 addpath('obstacle_utilities')
@@ -74,6 +75,12 @@ end
 data = [];
 data.elapsed = elapsed;
 data.obstacle_violations = obstacle_violations;
+
+if(norm(robotarium_data(1:2, end) - goal) <= distance_threshold_for_goal)
+   data.made_it_to_goal = true; 
+else
+   data.made_it_to_goal = false; 
+end
 
 save(unique_filename('aero_challenge_two_data'), 'data')
 

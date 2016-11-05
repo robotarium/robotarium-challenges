@@ -4,6 +4,7 @@ close all
 % constants 
 
 distance_threshold_for_collision = 0.07;
+distance_threshold_for_goal = 0.08;
 
 aero_local_path = pwd;
 
@@ -15,7 +16,7 @@ addpath(strcat(pwd, '/obstacle_utilities'))
 run environment_one.m
 
 rb__ = RobotariumBuilder();
-r__ = rb__.set_number_of_agents(1).set_save_data(true).build();
+r__ = rb__.set_number_of_agents(1).set_save_data(false).build();
 
 % Initialize robot to starting position
 
@@ -74,6 +75,12 @@ end
 data = [];
 data.elapsed = elapsed;
 data.obstacle_violations = obstacle_violations;
+
+if(norm(robotarium_data(1:2, end) - goal) <= distance_threshold_for_goal)
+   data.made_it_to_goal = true; 
+else
+   data.made_it_to_goal = false; 
+end
 
 save(unique_filename('aero_challenge_one_data'), 'data')
 

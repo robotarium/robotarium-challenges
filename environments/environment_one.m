@@ -1,6 +1,5 @@
 
 % Goal position 
-
 start = [-0.4 ; 0 ; 0];
 goal = [0.4 ; 0];
 
