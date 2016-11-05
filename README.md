@@ -28,3 +28,7 @@ Here are some additional comments on the above 4 commands.
 2.  You should initialize your robot to the start position.  Don't worry about hitting obstacles when initializing your robot to the start position - the server will make sure that your robot is at the 'start' position before running your script.  Some code that accomplishes this task is in all of the run_aero_challenge files 
 3.  Fairly straighforward
 4.  Make sure you select your challenge on the website under options for each experiment.
+
+# About the run_aero_challenge Scripts 
+
+Don't worry about running these.  You should simply load the environment file, initialize your robot, and try to go from start => goal, without hitting obstacles.  These are included so that you can see how the server will run your script.
