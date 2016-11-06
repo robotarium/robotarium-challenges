@@ -5,7 +5,7 @@ A repository for all the Robotarium challenge problems!
 
 This repository contains the files for the Robotarium challenge problem for the 2016 Aerospace hackathon! 
 
-# High-level Informatoin 
+# High-level Information 
 
 At a high-level, you copy and modify the main.m file (the name doesn't matter) then submit it on the website (http://www.robotarium.org).  The server will load the required files, initialize your robot, then give you feedback on how well you completed the challenge.
 
