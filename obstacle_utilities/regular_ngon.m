@@ -1,6 +1,6 @@
 function [ line_segments, points ] = regular_ngon(varargin)
-%GENERATE_POLYGON Summary of this function goes here
-%   Detailed explanation goes here
+%GENERATE_POLYGON Returns a polygon.  You shouldn't have to use this
+%function.
 
     % Parse inputs
     p = inputParser;

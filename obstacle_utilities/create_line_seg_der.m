@@ -1,6 +1,6 @@
 function [ f ] = create_line_seg_der(line_segment)
-%LINE_SEGMENT_DERIVATIVE Summary of this function goes here
-%   Detailed explanation goes here
+%LINE_SEGMENT_DERIVATIVE Returns the derivative of the squared distance to
+% a line segment.
 
     f = @derivative;
     
