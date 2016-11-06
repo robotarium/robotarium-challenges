@@ -1,6 +1,5 @@
 function [ distance_squared ] = distance_to_segment_sq(point, line)
-%DISTANCE_TO_SEGMENT Summary of this function goes here
-%   Detailed explanation goes here
+%DISTANCE_TO_SEGMENT Returns the squared distance from a point to a line segment
 
     % Let's say that line goes [v ; w]
     

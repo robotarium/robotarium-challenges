@@ -3,7 +3,7 @@ close all
 
 % constants 
 
-distance_threshold_for_collision = 0.07;
+distance_threshold_for_collision = 0.0254;
 distance_threshold_for_goal = 0.5;
 
 addpath('environments')
